@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container {
+max-width: 1200px;
+position: relative;
+margin: auto;
+}
+.image_slider {
+    display: none;
+  }
+img {
+    vertical-align: middle;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-color: #ddd;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style:solid;
+    display: inline-block;
+
+}
+.active {
+    border-color: rgb(34, 32, 32);
+}
+.fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade-image {
+    from {opacity: .4;}
+    to {opacity: 1}
+}
+@keyframes fade-image {
+    from {opacity: .4;}
+    to {opacity: 1}
+}
